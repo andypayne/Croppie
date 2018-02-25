@@ -13,7 +13,7 @@
         factory(exports);
     } else {
         // Browser globals
-        factory((root.commonJsStrict = {}));
+        factory();
     }
 }(this, function (exports) {
 
@@ -1576,5 +1576,5 @@
         }
     });
 
-    exports.Croppie = window.Croppie = Croppie;
+    window.Croppie = Croppie;
 }));
